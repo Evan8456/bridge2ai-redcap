@@ -16,7 +16,7 @@ jobs:
       - name: Trigger Workflow in Another Repository
         uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
-            owner: sensein
+            owner: Evan8456
             repo: b2ai-redcap2rs
             github_token: ${{ secrets.AUTH }}
             workflow_file_name: deploy.yml
