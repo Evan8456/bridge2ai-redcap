@@ -1,4 +1,4 @@
-name: Trigger ReproSchema to RedCap workflow
+name: Trigger Target Workflow
 
 on:
   push:
@@ -9,7 +9,8 @@ jobs:
   trigger:
     runs-on: ubuntu-latest
 
-      - name: Trigger workflow to build ReproSchema from RedCap
+    steps:
+      - name: Message
         run: |
           curl --request POST \
           --header "Authorization: token ${{ secrets.B2AI_REDCAP2RS_PAT }}" \
