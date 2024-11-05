@@ -8,7 +8,7 @@ on:
 jobs:
   trigger:
     runs-on: ubuntu-latest
-    steps:
+
       - name: Trigger workflow to build ReproSchema from RedCap
         run: |
           curl --request POST \
